@@ -1,0 +1,10 @@
+[package]
+name = "advent_2024"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = { version = "0.12.9", features = ["blocking", "cookies"] }
+regex = "1.11.1"
+toml = "0.8"
+
