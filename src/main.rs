@@ -1,20 +1,18 @@
 use reqwest::{Url, header};
 use std::fs;
 
-mod day_3;
-use day_3::solution;
+mod day_4;
+use day_4::solution;
 
 fn main() {
     // Read config file
-    let config_content = fs::read_to_string("config.toml")
-        .expect("Failed to read config file");
-    let config: toml::Table = toml::from_str(&config_content)
-        .expect("Failed to parse config file");
+    let config_content = fs::read_to_string("config.toml").expect("Failed to read config file");
+    let config: toml::Table = toml::from_str(&config_content).expect("Failed to parse config file");
     let cookie_key = config["cookie_key"]
         .as_str()
         .expect("Cookie key not found in config");
 
-    let url = "https://adventofcode.com/2024/day/3/input"
+    let url = "https://adventofcode.com/2024/day/4/input"
         .parse::<Url>()
         .unwrap();
     let cookie_name = "session";

@@ -19,8 +19,4 @@ pub mod solution {
         }
         println!("{}", sum);
     }
-
-    // for (_, [num1, num2]) in re.captures_iter(&resp).map(|c| c.extract()) {
-    //     sum += num1.parse::<u64>().unwrap() * num2.parse::<u64>().unwrap()
-    // }
 }
