@@ -1,8 +1,8 @@
 use reqwest::{Url, header};
 use std::fs;
 
-mod day_4;
-use day_4::solution;
+mod day_5;
+use day_5::solution;
 
 fn main() {
     // Read config file
@@ -12,7 +12,7 @@ fn main() {
         .as_str()
         .expect("Cookie key not found in config");
 
-    let url = "https://adventofcode.com/2024/day/4/input"
+    let url = "https://adventofcode.com/2024/day/5/input"
         .parse::<Url>()
         .unwrap();
     let cookie_name = "session";
